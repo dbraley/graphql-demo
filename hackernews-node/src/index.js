@@ -1,11 +1,11 @@
 const { GraphQLServer } = require('graphql-yoga')
 
-let idCount = links.length;
 let links = [{
     id: 'link-0',
     url: 'www.howtographql.com',
     description: 'Fullstack tutorial for GraphQL'
 }];
+let idCount = links.length;
 
 const resolvers = {
     Query: {
@@ -47,7 +47,7 @@ const resolvers = {
 };
 
 const server = new GraphQLServer({
-    typeDefs: '/src/schema.graphql',
+    typeDefs: 'src/schema.graphql',
     resolvers,
 });
 server.start(() => console.log(`Server is running on http://localhost:4000`));
