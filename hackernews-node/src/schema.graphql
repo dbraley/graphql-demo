@@ -1,6 +1,6 @@
 type Query {
     info: String!
-    feed(filter: String, skip: Int, first: Int, orderBy: LinkOrderByInput): [Link!]!
+    feed(filter: String, skip: Int, first: Int, orderBy: LinkOrderByInput): Feed!
     link(id: ID!): Link
 }
 
@@ -25,6 +25,11 @@ enum LinkOrderByInput {
     url_DESC
     createdAt_ASC
     createdAt_DESC
+}
+
+type Feed {
+    links: [Link!]!
+    count: Int!
 }
 
 type Link {
