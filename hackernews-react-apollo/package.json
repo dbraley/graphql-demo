@@ -6,6 +6,7 @@
     "apollo-boost": "^0.4.3",
     "apollo-cache-inmemory": "latest",
     "apollo-client": "latest",
+    "apollo-link-context": "^1.0.18",
     "apollo-link-http": "latest",
     "graphql": "^14.4.2",
     "graphql-tag": "latest",
