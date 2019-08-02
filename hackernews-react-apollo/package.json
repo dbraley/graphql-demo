@@ -8,6 +8,7 @@
     "apollo-client": "latest",
     "apollo-link-context": "^1.0.18",
     "apollo-link-http": "latest",
+    "apollo-link-ws": "^1.0.18",
     "graphql": "^14.4.2",
     "graphql-tag": "latest",
     "react": "^16.8.6",
@@ -15,7 +16,8 @@
     "react-dom": "^16.8.6",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "subscriptions-transport-ws": "^0.9.16"
   },
   "scripts": {
     "start": "react-scripts start",
